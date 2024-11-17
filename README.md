@@ -1,3 +1,17 @@
+# Why this fork?
+
+I created a HomeAssistant add-on repository that makes it possible to install the py_gocoax_stats Docker image as a HomeAssistant Supervisor add-on.
+
+All you need to do is to add
+https://github.com/DFS-90/py_gocoax_stats
+as an add-on repository
+(e. g. explained [here](https://theprivatesmarthome.com/how-to/add-community-add-on-repository-in-home-assistant/)).
+<br><br><br>
+<b>All credits go to GitHub user [dewgenenny](https://github.com/dewgenenny) who did an excellent job by developing this script and generating the Docker image!</b>
+<br><br>
+
+# This is the original README:
+
 # py_gocoax_stats
 
 A Python script to fetch and monitor statistics from GoCoax MoCA devices. Originally tested with the MA2500D model, but it may work with others as well.
