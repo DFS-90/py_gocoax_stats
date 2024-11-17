@@ -1,0 +1,39 @@
+name: goCoax-stats
+version: "1.0.0"
+slug: gocoax_stats
+description: "All credits go to GitHub user dewgenenny! This is a small Python script that fetches statistics from goCoax MoCA devices and sends all data to an MQTT broker. It was originally tested with the MA2500D model, but it may work with others as well"
+url: "https://github.com/dewgenenny/py_gocoax_stats"
+init: false
+startup: application
+legacy: true
+arch: 
+- amd64
+map:
+- addons:rw
+options:
+  LOGLEVEL: "info"
+  DEBUG: "False"
+  MOCA_USERNAME: "admin"
+  MOCA_PASSWORD: "gocoax"
+  MOCA_HOSTS: "192.168.1.100,192.168.1.101"
+  MQTT_HOST: "192.168.1.10"
+  MQTT_PORT: "1883"
+  MQTT_USERNAME: "user"
+  MQTT_PASSWORD: "password"
+  MQTT_BASE_TOPIC: "moca"
+schema:
+  LOGLEVEL: "str"
+  DEBUG: "str"
+  MOCA_USERNAME: "str?"
+  MOCA_PASSWORD: "password?"
+  MOCA_HOSTS: "str"
+  MQTT_HOST: "str"
+  MQTT_PORT: "str"
+  MQTT_USERNAME: "str?"
+  MQTT_PASSWORD: "password?"
+  MQTT_BASE_TOPIC: "str"
+host_network: true
+#ports:
+#  10000/tcp: 10000
+#ports_description:
+#  10000/tcp: "Port for x"
