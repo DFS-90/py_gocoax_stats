@@ -1,0 +1,4 @@
+# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
+name: Home Assistant add-on repository for py_gocoax_stats
+url: 'https://github.com/DFS-90/py_gocoax_stats'
+maintainer: DFS-90 <serveradmin@home-net.me>
